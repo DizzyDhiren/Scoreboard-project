@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <h1>Scoreboard</h1>
+        <div class="container">
+            <div class="card"> 
+                <h1>Home</h1>
+                <span id="home-score">0</span>
+                <div class="buttons">
+                    <button id = "add1-home" onclick="homePlusOne()">+1</button>
+                    <button id = "add2-home" onclick = "homePlusTwo()">+2</button>
+                    <button id = "add3-home" onclick = "homePlusThree()">+3</button>
+                </div>
+            </div>
+
+            <div class="card"> 
+                <h1>Away</h1>
+                <span id="away-score">0</span>
+                <div class="buttons">
+                    <button id = "add1-away" onclick="awayPlusOne()">+1</button>
+                    <button id = "add2-away" onclick="awayPlusTwo()">+2</button>    
+                    <button id = "add3-away" onclick="awayPlusThree()">+3</button>
+                </div>
+            </div>
+
+            <button id="reset" onclick="reset()">Reset</button>
+
+         </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
